@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.appController">
+    <children>
+        <AnchorPane fx:id="mainPanel" prefHeight="114.0" prefWidth="910.0" style="-fx-background-color: #9baacf;">
+            <children>
+                <Label fx:id="introText" layoutX="14.0" layoutY="14.0" onMouseClicked="#HomeButtonClick" prefHeight="46.0" prefWidth="143.0" text="HisMes">
+                    <font>
+                        <Font name="Forte" size="39.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="0.17938934937688233" endY="0.9045801572217286" startX="0.18702291805325574" startY="0.5190839658256706">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+            <Button fx:id="homeButton" layoutY="71.0" mnemonicParsing="false" onAction="#HomeButtonClick" prefHeight="55.0" prefWidth="227.5" style="-fx-background-color: #4076b3; -fx-background-radius: 0; -fx-border-width: 0.3; -fx-border-color: #111c29;" text="Главная">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="publicChatButton" layoutX="226.0" layoutY="71.0" mnemonicParsing="false" onAction="#PublicChatButtonClick" prefHeight="55.0" prefWidth="227.5" style="-fx-background-color: #4076b3; -fx-background-radius: 0; -fx-border-color: #111c29; -fx-border-width: 0.3;" text="Общий чат">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchPeopleButton" layoutX="454.0" layoutY="71.0" mnemonicParsing="false" onAction="#SearchButton" prefHeight="55.0" prefWidth="227.5" style="-fx-background-color: #4076b3; -fx-background-radius: 0; -fx-border-color: #111c29; -fx-border-width: 0.3;" text="Поиск">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="privateChatButton" layoutX="682.0" layoutY="71.0" mnemonicParsing="false" onAction="#privateChatButtonClick" prefHeight="55.0" prefWidth="227.5" style="-fx-background-color: #4076b3; -fx-background-radius: 0; -fx-border-color: #111c29; -fx-border-width: 0.3;" text="Сообщения">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="28.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginLabel" layoutX="582.0" layoutY="17.0" prefHeight="35.0" prefWidth="265.0" text="логин" textAlignment="RIGHT">
+               <font>
+                  <Font name="Forte" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.17938934937688233" endY="0.9045801572217286" proportional="false" startX="0.18702291805325574" startY="0.5190839658256706">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="gearImage" fitHeight="35.0" fitWidth="35.0" layoutX="857.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourse/kisspng-gear-computer-icons-clip-art-bicycle-chain-5b4851419df302.141822831531466049647.jpg" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="HomePanel" layoutY="126.0" prefHeight="570.0" prefWidth="910.0">
+         <children>
+            <ImageView fitHeight="605.0" fitWidth="910.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourse/1584101828_13-p-krutie-foni-dlya-vizitok-25.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="EmailLabel" layoutX="411.0" layoutY="203.0" prefHeight="55.0" prefWidth="344.0" text="sanekLLIypa@yandex.ru" textFill="WHITE">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="countryLabel" layoutX="411.0" layoutY="149.0" prefHeight="46.0" prefWidth="368.0" text="Беларусь" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="bDayLabel" layoutX="411.0" layoutY="273.0" prefHeight="55.0" prefWidth="368.0" text="2000-11-27" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="userPicture" fitHeight="294.0" fitWidth="401.0" layoutX="75.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourse/default.jpg" />
+               </image></ImageView>
+            <Label fx:id="NameLabel" layoutX="411.0" layoutY="80.0" prefHeight="55.0" prefWidth="368.0" text="Sasha Ogurcov" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="411.0" layoutY="71.0" text="Имя Фамилия" />
+            <Label layoutX="411.0" layoutY="140.0" text="Страна" />
+            <Label layoutX="411.0" layoutY="201.0" text="email адрес" />
+            <Label layoutX="411.0" layoutY="267.0" text="Дата рождения" />
+         </children>
+        </AnchorPane>
+      <AnchorPane fx:id="publicChatPanel" layoutY="126.0" prefHeight="569.0" prefWidth="910.0" visible="false">
+         <children>
+            <ImageView fitHeight="569.0" fitWidth="918.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourse/1584101828_13-p-krutie-foni-dlya-vizitok-25.jpg" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="log" cache="true" editable="false" layoutX="8.0" layoutY="8.0" prefHeight="495.0" prefWidth="440.0" style="-fx-border-width: 5; -fx-border-color: black;">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="sayTextField" layoutX="20.0" layoutY="503.0" onAction="#EnterTextField" prefHeight="31.0" prefWidth="362.0" promptText="say" style="-fx-border-color: gray; -fx-border-width: 3; -fx-background-color: white;" />
+            <Button fx:id="SendMesButton" contentDisplay="TOP" graphicTextGap="6.0" layoutX="379.0" layoutY="503.0" minWidth="35.0" mnemonicParsing="false" onAction="#EnterTextField" prefHeight="31.0" prefWidth="61.0" style="-fx-border-color: gray; -fx-border-width: 3;" text="&gt;" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <MenuButton fx:id="chatSettings" layoutX="401.0" layoutY="14.0" mnemonicParsing="false" text="...">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+         </children></AnchorPane>
+      <AnchorPane fx:id="searchPeoplePanel" layoutX="-1.0" layoutY="126.0" prefHeight="569.0" prefWidth="910.0" visible="false">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="1136.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourse/1584101828_13-p-krutie-foni-dlya-vizitok-25.jpg" />
+               </image>
+            </ImageView>
+            <ListView fx:id="PeopleListView" focusTraversable="false" layoutX="66.0" layoutY="86.0" prefHeight="449.0" prefWidth="296.0" />
+            <TextField fx:id="searchTextField" layoutX="66.0" layoutY="40.0" onAction="#EnterTextFieldSearchUser" prefHeight="26.0" prefWidth="296.0" promptText="Введите логин для поиска" />
+            <TextField fx:id="searchNameTextFielt" layoutX="429.0" layoutY="86.0" onAction="#EnterTextFieldSearchUser" prefHeight="26.0" prefWidth="323.0" promptText="Поиск по имени" visible="false" />
+            <TextField fx:id="searchSurnameTextField" layoutX="429.0" layoutY="157.0" onAction="#EnterTextFieldSearchUser" prefHeight="26.0" prefWidth="323.0" promptText="Поиск по фамилии" visible="false" />
+            <TextField fx:id="searchCoyntryTextField" layoutX="429.0" layoutY="234.0" onAction="#EnterTextFieldSearchUser" prefHeight="26.0" prefWidth="323.0" promptText="Поиск по стране" visible="false" />
+            <Button layoutX="429.0" layoutY="37.0" mnemonicParsing="false" onAction="#AdvancedSettingButtonClick" prefHeight="32.0" prefWidth="323.0" text="Дополнительные параметры поиска" />
+            <Button fx:id="backAdvantagesButton" layoutX="688.0" layoutY="350.0" mnemonicParsing="false" onAction="#backAdvantagesButtonClick" text="Скрыть" visible="false" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="privateChatPanel" layoutX="-1.0" layoutY="125.0" prefHeight="570.0" prefWidth="910.0" visible="false">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="911.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourse/1584101828_13-p-krutie-foni-dlya-vizitok-25.jpg" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="privateMsgTextArea" editable="false" layoutX="91.0" layoutY="31.0" prefHeight="477.0" prefWidth="728.0" />
+            <Label layoutX="322.0" layoutY="7.0" text="Диалог с пользователем: " textFill="#bfbaba">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="privateMSGLoginLabel" layoutX="533.0" layoutY="7.0" textFill="#bfbaba">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sendPrivateMsg" layoutX="97.0" layoutY="515.0" onAction="#EnterPrivateTextField" prefHeight="31.0" prefWidth="654.0" promptText="say" style="-fx-border-color: gray; -fx-border-width: 3; -fx-background-color: white;" />
+            <Button fx:id="sendPrivateMsgButton" contentDisplay="TOP" graphicTextGap="6.0" layoutX="750.0" layoutY="515.0" minWidth="35.0" mnemonicParsing="false" onAction="#EnterPrivateTextField" prefHeight="31.0" prefWidth="61.0" style="-fx-border-color: gray; -fx-border-width: 3;" text="&gt;" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="backPrivateMsgButton" layoutX="18.0" layoutY="16.0" mnemonicParsing="false" onAction="#privateBackButtonClick" style="-fx-background-color: blue;" text="Назад" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="UserInfoPanel" layoutY="126.0" prefHeight="570.0" prefWidth="910.0" visible="false">
+         <children>
+            <ImageView fitHeight="605.0" fitWidth="910.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourse/1584101828_13-p-krutie-foni-dlya-vizitok-25.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="UserNameLabel" layoutX="431.0" layoutY="129.0" prefHeight="55.0" prefWidth="368.0" text="Sasha Ogurcov" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserEmailLabel" layoutX="431.0" layoutY="250.0" prefHeight="55.0" prefWidth="344.0" text="sanekLLIypa@yandex.ru" textFill="WHITE">
+               <font>
+                  <Font name="Arial Unicode MS" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="UsercountryLabel" layoutX="431.0" layoutY="192.0" prefHeight="46.0" prefWidth="368.0" text="Беларусь" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserbDayLabel" layoutX="431.0" layoutY="319.0" prefHeight="55.0" prefWidth="368.0" text="2000-11-27" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="userInfoPicture" fitHeight="294.0" fitWidth="323.0" layoutX="84.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourse/default.jpg" />
+               </image></ImageView>
+            <Label fx:id="UserLoginLabel" layoutX="431.0" layoutY="63.0" prefHeight="55.0" prefWidth="368.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="backUnfoUserButton" layoutX="8.0" layoutY="6.0" mnemonicParsing="false" onAction="#backUnfoUserButtonClick" style="-fx-background-color: blue;" text="Назад" />
+            <Button fx:id="privateDialogButton" layoutX="84.0" layoutY="396.0" mnemonicParsing="false" onAction="#privateDialogsButtonClick" prefHeight="32.0" prefWidth="294.0" text="Написать сообщение">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="431.0" layoutY="122.0" text="Имя Фамилия" />
+            <Label layoutX="431.0" layoutY="188.0" text="Страна" />
+            <Label layoutX="431.0" layoutY="249.0" text="email адрес" />
+            <Label layoutX="431.0" layoutY="315.0" text="Дата рождения" />
+            <Label layoutX="434.0" layoutY="54.0" text="Логин" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
