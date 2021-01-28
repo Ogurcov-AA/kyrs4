@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
+    <file url="file://$PROJECT_DIR$/ChatServer/src/server/ChatServer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/src/server/DataBaseHandler.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DataServer/src/DataServ/DatabaseHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Network/src/ChatNetwork/Connection.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Network/src/ChatNetwork/RequestMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Network/src/ChatNetwork/Seriazable.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrivateChatServ/src/server/ChatServer.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/PrivateChatServ/src/server/DataBaseTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrivateChatServ/src/server/DatabaseHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sample/Encrypt.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/sample/InputOutputData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sample/MessageHandling.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sample/PrivateMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sample/animation.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/sample/appController.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
